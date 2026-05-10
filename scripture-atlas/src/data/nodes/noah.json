@@ -1,0 +1,25 @@
+{
+  "slug": "noah",
+  "title": "Noah / Nuh",
+  "figures": ["Noah", "Nuh", "Noah's family"],
+  "themes": ["judgment", "covenant", "warning", "deliverance", "renewal"],
+  "passages": {
+    "torah": ["Genesis 6-9"],
+    "christian_bible": ["Genesis 6-9", "1 Peter 3:18-22"],
+    "quran": ["Surah Hud 11:25-49", "Surah Nuh 71"]
+  },
+  "similarities": [
+    "Noah is portrayed as righteous among his people.",
+    "A destructive flood is sent as judgment.",
+    "The faithful are delivered through divine command.",
+    "Afterward there is a sign of renewed order."
+  ],
+  "differences": [
+    { "type": "family_outcome", "description": "The Qur’an highlights a son who rejects the warning and is lost in the flood." },
+    { "type": "covenant_symbol", "description": "Genesis includes the rainbow as a covenant sign with all living beings." }
+  ],
+  "commentary_notes": [
+    "Noah narratives combine moral warning with hope for renewal.",
+    "Comparative mapping can track how covenant motifs develop later."
+  ]
+}

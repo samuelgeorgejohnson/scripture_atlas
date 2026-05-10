@@ -1,0 +1,31 @@
+{
+  "slug": "joseph",
+  "title": "Joseph / Yusuf",
+  "figures": ["Joseph", "Yusuf", "Jacob", "Yaqub"],
+  "themes": ["dreams", "betrayal", "exile", "forgiveness", "providence"],
+  "passages": {
+    "torah": ["Genesis 37", "Genesis 39-50"],
+    "christian_bible": ["Genesis 37", "Genesis 39-50", "Acts 7:9-16"],
+    "quran": ["Surah Yusuf 12"]
+  },
+  "similarities": [
+    "Joseph is favored by his father.",
+    "His brothers betray him.",
+    "Dreams play a major role.",
+    "He rises to power in Egypt."
+  ],
+  "differences": [
+    {
+      "type": "narrative_emphasis",
+      "description": "The Qur’an presents the Joseph story as one unified surah with a strong moral and spiritual arc."
+    },
+    {
+      "type": "textual_structure",
+      "description": "The Torah spreads Joseph’s story across multiple Genesis chapters."
+    }
+  ],
+  "commentary_notes": [
+    "Joseph serves as a model of patient trust amid injustice.",
+    "Comparative reading reveals different theological emphases on providence and repentance."
+  ]
+}

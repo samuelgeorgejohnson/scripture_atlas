@@ -1,0 +1,25 @@
+{
+  "slug": "creation",
+  "title": "Creation / Adam",
+  "figures": ["Adam", "Eve", "Hawwa"],
+  "themes": ["origin", "stewardship", "obedience", "fall", "mercy"],
+  "passages": {
+    "torah": ["Genesis 1", "Genesis 2-3"],
+    "christian_bible": ["Genesis 1", "Genesis 2-3", "Romans 5:12-21"],
+    "quran": ["Surah Al-Baqarah 2:30-39", "Surah Al-A'raf 7:11-27"]
+  },
+  "similarities": [
+    "Humanity is specially created by God.",
+    "The first humans dwell in a garden-like setting.",
+    "Disobedience leads to exile from ease.",
+    "Divine guidance continues after the fall."
+  ],
+  "differences": [
+    { "type": "anthropology", "description": "Christian readings often connect Adam to doctrines of sin and redemption through Christ." },
+    { "type": "responsibility", "description": "Qur’anic framing stresses repentance and guidance without inherited guilt." }
+  ],
+  "commentary_notes": [
+    "Creation narratives ground each tradition’s view of human purpose.",
+    "A timeline view can later link Adam traditions with prophetic succession."
+  ]
+}
