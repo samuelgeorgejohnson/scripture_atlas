@@ -2,17 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "ScriptureAtlasNode",
   "type": "object",
-  "required": [
-    "slug",
-    "title",
-    "figures",
-    "themes",
-    "alignment_rows",
-    "similarities",
-    "differences",
-    "source_metadata",
-    "commentary_notes"
-  ],
+  "required": ["slug", "title", "figures", "themes", "alignment_rows", "similarities", "differences", "source_metadata", "commentary_notes"],
   "properties": {
     "slug": { "type": "string" },
     "title": { "type": "string" },
@@ -25,73 +15,66 @@
         "required": ["beat"],
         "properties": {
           "beat": { "type": "string" },
-          "note": { "type": "string" },
-          "torah": { "$ref": "#/$defs/passageCell" },
-          "christian_bible": { "$ref": "#/$defs/passageCell" },
-          "quran": { "$ref": "#/$defs/passageCell" }
+          "summary": { "type": "string" },
+          "difference_tags": { "type": "array", "items": { "$ref": "#/$defs/lens" } },
+          "torah": { "$ref": "#/$defs/traditionEntry" },
+          "christian_bible": { "$ref": "#/$defs/traditionEntry" },
+          "quran": { "$ref": "#/$defs/traditionEntry" }
         },
         "additionalProperties": false
       }
     },
     "similarities": { "type": "array", "items": { "type": "string" } },
-    "differences": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["lens", "description"],
-        "properties": {
-          "lens": {
-            "type": "string",
-            "enum": ["textual", "theological", "historical", "political reception", "translation issue"]
-          },
-          "description": { "type": "string" }
-        },
-        "additionalProperties": false
-      }
-    },
+    "differences": { "type": "array", "items": { "$ref": "#/$defs/differenceNote" } },
     "source_metadata": {
       "type": "object",
       "required": ["compiled_by", "last_reviewed", "citations"],
       "properties": {
         "compiled_by": { "type": "string" },
         "last_reviewed": { "type": "string" },
-        "citations": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["tradition", "reference", "note"],
-            "properties": {
-              "tradition": { "type": "string" },
-              "reference": { "type": "string" },
-              "note": { "type": "string" }
-            },
-            "additionalProperties": false
-          }
-        }
+        "citations": { "type": "array", "items": { "$ref": "#/$defs/sourceCitation" } }
       },
       "additionalProperties": false
     },
-    "commentary_notes": { "type": "array", "items": { "type": "string" } },
-    "passages": {
-      "type": "object",
-      "required": ["torah", "christian_bible", "quran"],
-      "properties": {
-        "torah": { "type": "array", "items": { "type": "string" } },
-        "christian_bible": { "type": "array", "items": { "type": "string" } },
-        "quran": { "type": "array", "items": { "type": "string" } }
-      },
-      "additionalProperties": false
-    }
+    "commentary_notes": { "type": "array", "items": { "type": "string" } }
   },
   "$defs": {
-    "passageCell": {
+    "lens": { "type": "string", "enum": ["textual", "theological", "historical", "political reception", "translation issue"] },
+    "differenceNote": {
       "type": "object",
-      "required": ["reference", "translation", "text", "notes"],
+      "required": ["lens", "description"],
       "properties": {
-        "reference": { "type": "string" },
+        "lens": { "$ref": "#/$defs/lens" },
+        "description": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "commentaryNote": {
+      "type": "object",
+      "required": ["title", "detail"],
+      "properties": {
+        "title": { "type": "string" },
+        "detail": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "traditionEntry": {
+      "type": "object",
+      "properties": {
+        "references": { "type": "array", "items": { "type": "string" } },
         "translation": { "type": "string" },
-        "text": { "type": "string" },
-        "notes": { "type": "string" }
+        "excerpt": { "type": "string" },
+        "notes": { "type": "array", "items": { "$ref": "#/$defs/commentaryNote" } }
+      },
+      "additionalProperties": false
+    },
+    "sourceCitation": {
+      "type": "object",
+      "required": ["tradition", "reference", "note"],
+      "properties": {
+        "tradition": { "type": "string" },
+        "reference": { "type": "string" },
+        "note": { "type": "string" }
       },
       "additionalProperties": false
     }

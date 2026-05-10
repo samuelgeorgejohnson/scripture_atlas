@@ -16,23 +16,6 @@
     "promise",
     "sacrifice"
   ],
-  "passages": {
-    "torah": [
-      "Genesis 12",
-      "Genesis 15",
-      "Genesis 17",
-      "Genesis 22"
-    ],
-    "christian_bible": [
-      "Genesis 12",
-      "Genesis 22",
-      "Galatians 3"
-    ],
-    "quran": [
-      "Surah Al-Baqarah 2:124-141",
-      "Surah As-Saffat 37:99-113"
-    ]
-  },
   "similarities": [
     "Abraham is called by God to leave homeland and trust promise.",
     "He is a central exemplar of faith.",
@@ -73,5 +56,183 @@
         "note": "Primary Qur’anic passage anchor for this node."
       }
     ]
-  }
+  },
+  "alignment_rows": [
+    {
+      "beat": "Call to leave homeland",
+      "summary": "Abraham/Ibrahim is called into trust-filled migration.",
+      "torah": {
+        "references": [
+          "Genesis 12:1-4"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 12:1-4",
+          "Hebrews 11:8"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 21:71",
+          "Qur’an 29:26"
+        ]
+      }
+    },
+    {
+      "beat": "Promise and descendants",
+      "summary": "God promises descendants and lasting significance.",
+      "torah": {
+        "references": [
+          "Genesis 15:5"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Romans 4:18"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 37:100-101"
+        ]
+      }
+    },
+    {
+      "beat": "Covenant formalized",
+      "summary": "Covenant is articulated through ritual/sign language.",
+      "difference_tags": [
+        "translation issue"
+      ],
+      "torah": {
+        "references": [
+          "Genesis 17:1-14"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 17:1-14",
+          "Galatians 3:16"
+        ]
+      },
+      "quran": {}
+    },
+    {
+      "beat": "Hospitality to messengers",
+      "summary": "Abraham welcomes visitors; promise of a son is reaffirmed.",
+      "torah": {
+        "references": [
+          "Genesis 18:1-15"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 18:1-15"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 11:69-73",
+          "Qur’an 51:24-30"
+        ]
+      }
+    },
+    {
+      "beat": "Intercession for a city",
+      "summary": "Abraham pleads regarding judgment on wicked towns.",
+      "torah": {
+        "references": [
+          "Genesis 18:22-33"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 18:22-33"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 11:74-76"
+        ]
+      }
+    },
+    {
+      "beat": "Hagar and Ishmael in wilderness",
+      "summary": "Mother and child face hardship under divine care.",
+      "difference_tags": [
+        "textual"
+      ],
+      "torah": {
+        "references": [
+          "Genesis 21:14-21"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 21:14-21"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 14:37"
+        ],
+        "notes": [
+          {
+            "title": "Later memory",
+            "detail": "Islamic tradition links this episode with Meccan sacred history."
+          }
+        ]
+      }
+    },
+    {
+      "beat": "Near-sacrifice test",
+      "summary": "A son is offered in obedience test and ransomed.",
+      "difference_tags": [
+        "translation issue",
+        "theological"
+      ],
+      "torah": {
+        "references": [
+          "Genesis 22:1-14"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Hebrews 11:17-19"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 37:102-107"
+        ],
+        "notes": [
+          {
+            "title": "Identity discussion",
+            "detail": "Qur’anic text does not name the son; later exegetical traditions differ."
+          }
+        ]
+      }
+    },
+    {
+      "beat": "Legacy as model of faith",
+      "summary": "Abraham becomes archetype of surrender and covenant faith.",
+      "torah": {
+        "references": [
+          "Genesis 26:4-5"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Romans 4:11-12",
+          "James 2:23"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 2:124",
+          "Qur’an 16:120-123"
+        ]
+      }
+    }
+  ]
 }

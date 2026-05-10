@@ -3,13 +3,14 @@ import { notFound } from 'next/navigation';
 import { TriptychReader } from '@/components/TriptychReader';
 import { DifferenceTags } from '@/components/DifferenceTags';
 import { TimelineView } from '@/components/TimelineView';
+import { StoryNode } from '@/data/types';
 import creation from '@/data/nodes/creation.json';
 import noah from '@/data/nodes/noah.json';
 import abraham from '@/data/nodes/abraham.json';
 import joseph from '@/data/nodes/joseph.json';
 import moses from '@/data/nodes/moses.json';
 
-const nodes = [creation, noah, abraham, joseph, moses];
+const nodes: StoryNode[] = [creation, noah, abraham, joseph, moses] as StoryNode[];
 
 export function generateStaticParams() {
   return nodes.map(({ slug }) => ({ slug }));
@@ -32,7 +33,7 @@ export default async function StoryNodePage({ params }: { params: Promise<{ slug
         ))}
       </section>
 
-      <TriptychReader passages={node.passages} alignmentRows={node.alignment_rows} />
+      <TriptychReader alignmentRows={node.alignment_rows} />
 
       <section className="card" style={{ marginTop: '1rem' }}>
         <h2 style={{ marginTop: 0 }}>Similarities</h2>
