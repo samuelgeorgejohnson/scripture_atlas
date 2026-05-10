@@ -38,44 +38,107 @@
     "last_reviewed": "2026-05-10",
     "citations": [
       {
-        "tradition": "Torah",
-        "reference": "Genesis 1",
-        "note": "Primary passage anchor for this node."
+        "tradition": "Torah/Tanakh",
+        "reference": "Genesis 1-3 (JPS 1917)",
+        "note": "Reference anchors only; verse text intentionally left as placeholder."
       },
       {
         "tradition": "Christian Bible",
-        "reference": "Genesis 1",
-        "note": "Canonical cross-reference used for comparison."
+        "reference": "Genesis 1-3 (KJV)",
+        "note": "Reference anchors only; verse text intentionally left as placeholder."
       },
       {
         "tradition": "Qur’an",
-        "reference": "Surah Al-Baqarah 2:30-39",
-        "note": "Primary Qur’anic passage anchor for this node."
+        "reference": "2:30-39, 7:11-27, 20:115-123",
+        "note": "Reference anchors only; translation source still under review for licensing/usage consistency."
       }
     ]
   },
   "alignment_rows": [
     {
       "beat": "Creation begins",
-      "note": "Opening cosmological frame.",
+      "note": "All three traditions open Adam’s story with divine initiative in creating or inaugurating the created order.",
       "torah": {
         "reference": "Genesis 1:1",
-        "translation": "Placeholder",
+        "translation": "JPS 1917 (placeholder text)",
         "text": "Placeholder verse text.",
-        "notes": "Hebrew Bible opening."
+        "notes": "Classical opening of Torah/Tanakh creation account."
       },
       "christian_bible": {
         "reference": "Genesis 1:1",
-        "translation": "Placeholder",
+        "translation": "KJV (placeholder text)",
         "text": "Placeholder verse text.",
-        "notes": "Same inherited Genesis text."
+        "notes": "Shared canonical opening with Hebrew Bible text tradition."
       },
       "quran": {
-        "reference": "Surah Al-Baqarah 2:30",
-        "translation": "Placeholder",
+        "reference": "Qur’an 2:30",
+        "translation": "Placeholder translation",
         "text": "Placeholder verse text.",
-        "notes": "Qur’an enters through Adam/khalifah framing."
+        "notes": "Begins Adam cycle with divine declaration to the angels."
       }
+    },
+    {
+      "beat": "God creates/organizes heaven and earth",
+      "note": "Torah/Tanakh and Christian Bible narrate ordered creation sequence; Qur’an references divine ordering across passages.",
+      "torah": {"reference": "Genesis 1:1-10", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Cosmic structuring by divine speech."},
+      "christian_bible": {"reference": "Genesis 1:1-10", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Parallel seven-day framework passage."},
+      "quran": {"reference": "Qur’an 41:9-12", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Frequently cited for creation-order motifs."}
+    },
+    {
+      "beat": "Humanity is created",
+      "note": "All traditions mark humanity as a distinct act of creation with elevated role.",
+      "torah": {"reference": "Genesis 1:26-27; 2:7", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Image-language and Adam’s formation."},
+      "christian_bible": {"reference": "Genesis 1:26-27; 2:7", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Shared Genesis wording in Christian canon."},
+      "quran": {"reference": "Qur’an 15:28-29; 38:71-72", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Adam formed and enlivened by God."}
+    },
+    {
+      "beat": "Human purpose / stewardship",
+      "note": "Purpose language appears as dominion/stewardship in Genesis and khalifah framing in Qur’an.",
+      "torah": {"reference": "Genesis 1:28", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Mandate to fill and tend creation."},
+      "christian_bible": {"reference": "Genesis 1:28", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Often read as vocation and stewardship."},
+      "quran": {"reference": "Qur’an 2:30", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Human vicegerency/khalifah motif."}
+    },
+    {
+      "beat": "Garden or dwelling place",
+      "note": "Eden/Jannah setting provides initial state of provision and nearness.",
+      "torah": {"reference": "Genesis 2:8-15", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Garden in Eden and charge to keep it."},
+      "christian_bible": {"reference": "Genesis 2:8-15", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Shared Eden narrative locus."},
+      "quran": {"reference": "Qur’an 2:35", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Adam and spouse placed in the garden."}
+    },
+    {
+      "beat": "Command / prohibition",
+      "note": "Each tradition includes a divine command tied to a specific forbidden tree/action.",
+      "torah": {"reference": "Genesis 2:16-17", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Explicit prohibition given before transgression."},
+      "christian_bible": {"reference": "Genesis 2:16-17", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Canonical basis for command narrative."},
+      "quran": {"reference": "Qur’an 2:35; 20:117", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Prohibition and warning about Satan."}
+    },
+    {
+      "beat": "Temptation or disobedience",
+      "note": "Transgression follows deceptive prompting; narrative details and theological emphases differ.",
+      "torah": {"reference": "Genesis 3:1-7", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Serpent episode and eating the fruit."},
+      "christian_bible": {"reference": "Genesis 3:1-7", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Foundational fall narrative in Christian theology."},
+      "quran": {"reference": "Qur’an 7:20-22; 20:120-121", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Iblis whispers leading to lapse."}
+    },
+    {
+      "beat": "Exile/descent",
+      "note": "Departure from the garden marks a shift to earthly toil and moral testing.",
+      "torah": {"reference": "Genesis 3:23-24", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Expulsion from Eden narrative."},
+      "christian_bible": {"reference": "Genesis 3:23-24", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Exile motif and guarded return."},
+      "quran": {"reference": "Qur’an 2:36; 7:24", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": ""}
+    },
+    {
+      "beat": "Repentance or mercy",
+      "note": "Mercy themes are present in all three, though explicit repentance language is strongest in Qur’anic rendering.",
+      "torah": {"reference": "Genesis 3:21", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "God clothes the humans after judgment."},
+      "christian_bible": {"reference": "Genesis 3:21", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Read as sign of continuing divine care."},
+      "quran": {"reference": "Qur’an 2:37", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Adam receives words and is forgiven."}
+    },
+    {
+      "beat": "Ongoing guidance",
+      "note": "Post-fall life includes continued divine instruction; Torah/Christian text here is broader-canonical rather than a single Adam-only command.",
+      "torah": {"reference": "Genesis 3:15-19", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Judgment sayings frame human condition and future path."},
+      "christian_bible": {"reference": "Genesis 3:15-19", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Often tied to later salvation-history readings."},
+      "quran": {"reference": "Qur’an 2:38; 20:123", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Guidance promised for earthly life after descent."}
     }
   ]
 }
