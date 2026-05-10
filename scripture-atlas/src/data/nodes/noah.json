@@ -13,19 +13,6 @@
     "deliverance",
     "renewal"
   ],
-  "passages": {
-    "torah": [
-      "Genesis 6-9"
-    ],
-    "christian_bible": [
-      "Genesis 6-9",
-      "1 Peter 3:18-22"
-    ],
-    "quran": [
-      "Surah Hud 11:25-49",
-      "Surah Nuh 71"
-    ]
-  },
   "similarities": [
     "Noah is portrayed as righteous among his people.",
     "A destructive flood is sent as judgment.",
@@ -66,5 +53,190 @@
         "note": "Primary Qur’anic passage anchor for this node."
       }
     ]
-  }
+  },
+  "alignment_rows": [
+    {
+      "beat": "Call to warn",
+      "summary": "Noah/Nuh is commissioned to warn a resistant people.",
+      "difference_tags": [
+        "textual"
+      ],
+      "torah": {
+        "references": [
+          "Genesis 6:13"
+        ],
+        "translation": "JPS placeholder",
+        "excerpt": "Placeholder verse text."
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 6:13"
+        ],
+        "translation": "KJV placeholder",
+        "excerpt": "Placeholder verse text."
+      },
+      "quran": {
+        "references": [
+          "Qur’an 11:25-26",
+          "Qur’an 71:1"
+        ],
+        "translation": "Placeholder",
+        "excerpt": "Placeholder verse text."
+      }
+    },
+    {
+      "beat": "Corruption described",
+      "summary": "The world/society is depicted as morally ruined before judgment.",
+      "torah": {
+        "references": [
+          "Genesis 6:11-12"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 6:11-12"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 71:5-7"
+        ]
+      }
+    },
+    {
+      "beat": "Ark commanded",
+      "summary": "God commands construction of a vessel of deliverance.",
+      "difference_tags": [
+        "historical"
+      ],
+      "torah": {
+        "references": [
+          "Genesis 6:14-16"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 6:14-16"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 11:37"
+        ]
+      }
+    },
+    {
+      "beat": "Mockery and rejection",
+      "summary": "The prophet faces rejection before the flood.",
+      "torah": {},
+      "christian_bible": {},
+      "quran": {
+        "references": [
+          "Qur’an 11:38"
+        ],
+        "notes": [
+          {
+            "title": "Expansion note",
+            "detail": "Qur’anic retelling emphasizes ridicule by elites."
+          }
+        ]
+      }
+    },
+    {
+      "beat": "Flood begins",
+      "summary": "Judgment unfolds through overwhelming waters.",
+      "torah": {
+        "references": [
+          "Genesis 7:11-12"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 7:11-12",
+          "Matthew 24:37-39"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 11:40"
+        ]
+      }
+    },
+    {
+      "beat": "Family and followers",
+      "summary": "The saved group is limited and defined by faith/obedience.",
+      "difference_tags": [
+        "theological"
+      ],
+      "torah": {
+        "references": [
+          "Genesis 7:7"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "1 Peter 3:20"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 11:42-43"
+        ]
+      }
+    },
+    {
+      "beat": "Waters recede",
+      "summary": "Flood ends and survivors disembark to renewed earth.",
+      "torah": {
+        "references": [
+          "Genesis 8:13-19"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 8:13-19"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 11:44"
+        ]
+      }
+    },
+    {
+      "beat": "Post-flood covenant/sign",
+      "summary": "A renewed order is marked by covenant language and signs.",
+      "difference_tags": [
+        "textual",
+        "theological"
+      ],
+      "torah": {
+        "references": [
+          "Genesis 9:8-17"
+        ],
+        "notes": [
+          {
+            "title": "Rainbow motif",
+            "detail": "Genesis explicitly gives the rainbow as covenant sign."
+          }
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 9:8-17"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Qur’an 11:48"
+        ],
+        "notes": [
+          {
+            "title": "Qur’anic framing",
+            "detail": "Ends with peace/blessing language rather than rainbow symbol."
+          }
+        ]
+      }
+    }
+  ]
 }

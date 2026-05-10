@@ -14,20 +14,6 @@
     "forgiveness",
     "providence"
   ],
-  "passages": {
-    "torah": [
-      "Genesis 37",
-      "Genesis 39-50"
-    ],
-    "christian_bible": [
-      "Genesis 37",
-      "Genesis 39-50",
-      "Acts 7:9-16"
-    ],
-    "quran": [
-      "Surah Yusuf 12"
-    ]
-  },
   "similarities": [
     "Joseph is favored by his father.",
     "His brothers betray him.",
@@ -68,5 +54,29 @@
         "note": "Primary Qur’anic passage anchor for this node."
       }
     ]
-  }
+  },
+  "alignment_rows": [
+    {
+      "beat": "Primary narrative anchors",
+      "summary": "Core references for aligned reading in this draft.",
+      "torah": {
+        "references": [
+          "Genesis 37",
+          "Genesis 39-50"
+        ]
+      },
+      "christian_bible": {
+        "references": [
+          "Genesis 37",
+          "Genesis 39-50",
+          "Acts 7:9-16"
+        ]
+      },
+      "quran": {
+        "references": [
+          "Surah Yusuf 12"
+        ]
+      }
+    }
+  ]
 }
