@@ -105,3 +105,25 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.78rem;
   margin-bottom: 0.4rem;
 }
+
+.comparison-table-wrap {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 820px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparison-table th {
+  background: var(--panel-soft);
+}

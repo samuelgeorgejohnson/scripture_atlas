@@ -32,7 +32,7 @@ export default async function StoryNodePage({ params }: { params: Promise<{ slug
         ))}
       </section>
 
-      <TriptychReader passages={node.passages} />
+      <TriptychReader passages={node.passages} alignmentRows={node.alignment_rows} />
 
       <section className="card" style={{ marginTop: '1rem' }}>
         <h2 style={{ marginTop: 0 }}>Similarities</h2>

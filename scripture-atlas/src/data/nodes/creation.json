@@ -13,21 +13,6 @@
     "fall",
     "mercy"
   ],
-  "passages": {
-    "torah": [
-      "Genesis 1",
-      "Genesis 2-3"
-    ],
-    "christian_bible": [
-      "Genesis 1",
-      "Genesis 2-3",
-      "Romans 5:12-21"
-    ],
-    "quran": [
-      "Surah Al-Baqarah 2:30-39",
-      "Surah Al-A'raf 7:11-27"
-    ]
-  },
   "similarities": [
     "Humanity is specially created by God.",
     "The first humans dwell in a garden-like setting.",
@@ -68,5 +53,29 @@
         "note": "Primary Qur’anic passage anchor for this node."
       }
     ]
-  }
+  },
+  "alignment_rows": [
+    {
+      "beat": "Creation begins",
+      "note": "Opening cosmological frame.",
+      "torah": {
+        "reference": "Genesis 1:1",
+        "translation": "Placeholder",
+        "text": "Placeholder verse text.",
+        "notes": "Hebrew Bible opening."
+      },
+      "christian_bible": {
+        "reference": "Genesis 1:1",
+        "translation": "Placeholder",
+        "text": "Placeholder verse text.",
+        "notes": "Same inherited Genesis text."
+      },
+      "quran": {
+        "reference": "Surah Al-Baqarah 2:30",
+        "translation": "Placeholder",
+        "text": "Placeholder verse text.",
+        "notes": "Qur’an enters through Adam/khalifah framing."
+      }
+    }
+  ]
 }

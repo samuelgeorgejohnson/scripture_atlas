@@ -7,7 +7,7 @@
     "title",
     "figures",
     "themes",
-    "passages",
+    "alignment_rows",
     "similarities",
     "differences",
     "source_metadata",
@@ -18,15 +18,20 @@
     "title": { "type": "string" },
     "figures": { "type": "array", "items": { "type": "string" } },
     "themes": { "type": "array", "items": { "type": "string" } },
-    "passages": {
-      "type": "object",
-      "required": ["torah", "christian_bible", "quran"],
-      "properties": {
-        "torah": { "type": "array", "items": { "type": "string" } },
-        "christian_bible": { "type": "array", "items": { "type": "string" } },
-        "quran": { "type": "array", "items": { "type": "string" } }
-      },
-      "additionalProperties": false
+    "alignment_rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["beat"],
+        "properties": {
+          "beat": { "type": "string" },
+          "note": { "type": "string" },
+          "torah": { "$ref": "#/$defs/passageCell" },
+          "christian_bible": { "$ref": "#/$defs/passageCell" },
+          "quran": { "$ref": "#/$defs/passageCell" }
+        },
+        "additionalProperties": false
+      }
     },
     "similarities": { "type": "array", "items": { "type": "string" } },
     "differences": {
@@ -66,7 +71,30 @@
       },
       "additionalProperties": false
     },
-    "commentary_notes": { "type": "array", "items": { "type": "string" } }
+    "commentary_notes": { "type": "array", "items": { "type": "string" } },
+    "passages": {
+      "type": "object",
+      "required": ["torah", "christian_bible", "quran"],
+      "properties": {
+        "torah": { "type": "array", "items": { "type": "string" } },
+        "christian_bible": { "type": "array", "items": { "type": "string" } },
+        "quran": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "passageCell": {
+      "type": "object",
+      "required": ["reference", "translation", "text", "notes"],
+      "properties": {
+        "reference": { "type": "string" },
+        "translation": { "type": "string" },
+        "text": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
   },
   "additionalProperties": false
 }
