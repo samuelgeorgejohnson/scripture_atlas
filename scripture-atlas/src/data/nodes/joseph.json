@@ -1,12 +1,32 @@
 {
   "slug": "joseph",
   "title": "Joseph / Yusuf",
-  "figures": ["Joseph", "Yusuf", "Jacob", "Yaqub"],
-  "themes": ["dreams", "betrayal", "exile", "forgiveness", "providence"],
+  "figures": [
+    "Joseph",
+    "Yusuf",
+    "Jacob",
+    "Yaqub"
+  ],
+  "themes": [
+    "dreams",
+    "betrayal",
+    "exile",
+    "forgiveness",
+    "providence"
+  ],
   "passages": {
-    "torah": ["Genesis 37", "Genesis 39-50"],
-    "christian_bible": ["Genesis 37", "Genesis 39-50", "Acts 7:9-16"],
-    "quran": ["Surah Yusuf 12"]
+    "torah": [
+      "Genesis 37",
+      "Genesis 39-50"
+    ],
+    "christian_bible": [
+      "Genesis 37",
+      "Genesis 39-50",
+      "Acts 7:9-16"
+    ],
+    "quran": [
+      "Surah Yusuf 12"
+    ]
   },
   "similarities": [
     "Joseph is favored by his father.",
@@ -16,16 +36,37 @@
   ],
   "differences": [
     {
-      "type": "narrative_emphasis",
+      "lens": "textual",
       "description": "The Qur’an presents the Joseph story as one unified surah with a strong moral and spiritual arc."
     },
     {
-      "type": "textual_structure",
+      "lens": "textual",
       "description": "The Torah spreads Joseph’s story across multiple Genesis chapters."
     }
   ],
   "commentary_notes": [
     "Joseph serves as a model of patient trust amid injustice.",
     "Comparative reading reveals different theological emphases on providence and repentance."
-  ]
+  ],
+  "source_metadata": {
+    "compiled_by": "Scripture Atlas Editorial Draft",
+    "last_reviewed": "2026-05-10",
+    "citations": [
+      {
+        "tradition": "Torah",
+        "reference": "Genesis 37",
+        "note": "Primary passage anchor for this node."
+      },
+      {
+        "tradition": "Christian Bible",
+        "reference": "Genesis 37",
+        "note": "Canonical cross-reference used for comparison."
+      },
+      {
+        "tradition": "Qur’an",
+        "reference": "Surah Yusuf 12",
+        "note": "Primary Qur’anic passage anchor for this node."
+      }
+    ]
+  }
 }

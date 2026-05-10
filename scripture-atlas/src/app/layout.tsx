@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { MainNav } from '@/components/MainNav';
 
 export const metadata: Metadata = {
   title: 'Scripture Atlas',
@@ -9,7 +10,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <MainNav />
+        {children}
+      </body>
     </html>
   );
 }

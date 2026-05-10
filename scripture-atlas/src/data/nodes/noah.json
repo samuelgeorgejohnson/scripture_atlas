@@ -1,12 +1,30 @@
 {
   "slug": "noah",
   "title": "Noah / Nuh",
-  "figures": ["Noah", "Nuh", "Noah's family"],
-  "themes": ["judgment", "covenant", "warning", "deliverance", "renewal"],
+  "figures": [
+    "Noah",
+    "Nuh",
+    "Noah's family"
+  ],
+  "themes": [
+    "judgment",
+    "covenant",
+    "warning",
+    "deliverance",
+    "renewal"
+  ],
   "passages": {
-    "torah": ["Genesis 6-9"],
-    "christian_bible": ["Genesis 6-9", "1 Peter 3:18-22"],
-    "quran": ["Surah Hud 11:25-49", "Surah Nuh 71"]
+    "torah": [
+      "Genesis 6-9"
+    ],
+    "christian_bible": [
+      "Genesis 6-9",
+      "1 Peter 3:18-22"
+    ],
+    "quran": [
+      "Surah Hud 11:25-49",
+      "Surah Nuh 71"
+    ]
   },
   "similarities": [
     "Noah is portrayed as righteous among his people.",
@@ -15,11 +33,38 @@
     "Afterward there is a sign of renewed order."
   ],
   "differences": [
-    { "type": "family_outcome", "description": "The Qur’an highlights a son who rejects the warning and is lost in the flood." },
-    { "type": "covenant_symbol", "description": "Genesis includes the rainbow as a covenant sign with all living beings." }
+    {
+      "lens": "textual",
+      "description": "The Qur’an highlights a son who rejects the warning and is lost in the flood."
+    },
+    {
+      "lens": "textual",
+      "description": "Genesis includes the rainbow as a covenant sign with all living beings."
+    }
   ],
   "commentary_notes": [
     "Noah narratives combine moral warning with hope for renewal.",
     "Comparative mapping can track how covenant motifs develop later."
-  ]
+  ],
+  "source_metadata": {
+    "compiled_by": "Scripture Atlas Editorial Draft",
+    "last_reviewed": "2026-05-10",
+    "citations": [
+      {
+        "tradition": "Torah",
+        "reference": "Genesis 6-9",
+        "note": "Primary passage anchor for this node."
+      },
+      {
+        "tradition": "Christian Bible",
+        "reference": "Genesis 6-9",
+        "note": "Canonical cross-reference used for comparison."
+      },
+      {
+        "tradition": "Qur’an",
+        "reference": "Surah Hud 11:25-49",
+        "note": "Primary Qur’anic passage anchor for this node."
+      }
+    ]
+  }
 }

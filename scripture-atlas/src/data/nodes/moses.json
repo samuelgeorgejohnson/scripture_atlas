@@ -1,12 +1,33 @@
 {
   "slug": "moses",
   "title": "Moses / Musa",
-  "figures": ["Moses", "Musa", "Aaron", "Pharaoh"],
-  "themes": ["liberation", "law", "prophecy", "leadership", "revelation"],
+  "figures": [
+    "Moses",
+    "Musa",
+    "Aaron",
+    "Pharaoh"
+  ],
+  "themes": [
+    "liberation",
+    "law",
+    "prophecy",
+    "leadership",
+    "revelation"
+  ],
   "passages": {
-    "torah": ["Exodus 1-20", "Deuteronomy 34"],
-    "christian_bible": ["Exodus 1-20", "Hebrews 11:23-29"],
-    "quran": ["Surah Taha 20", "Surah Al-Qasas 28", "Surah Al-A'raf 7:103-171"]
+    "torah": [
+      "Exodus 1-20",
+      "Deuteronomy 34"
+    ],
+    "christian_bible": [
+      "Exodus 1-20",
+      "Hebrews 11:23-29"
+    ],
+    "quran": [
+      "Surah Taha 20",
+      "Surah Al-Qasas 28",
+      "Surah Al-A'raf 7:103-171"
+    ]
   },
   "similarities": [
     "Moses confronts tyranny and leads deliverance.",
@@ -15,11 +36,38 @@
     "Moses remains a paradigmatic prophet-leader."
   ],
   "differences": [
-    { "type": "narrative_distribution", "description": "The Torah presents an extended continuous Moses cycle across multiple books." },
-    { "type": "didactic_repetition", "description": "The Qur’an retells Moses episodes in multiple surahs for moral reflection in varied contexts." }
+    {
+      "lens": "historical",
+      "description": "The Torah presents an extended continuous Moses cycle across multiple books."
+    },
+    {
+      "lens": "historical",
+      "description": "The Qur’an retells Moses episodes in multiple surahs for moral reflection in varied contexts."
+    }
   ],
   "commentary_notes": [
     "Moses is one of the most cross-referenced figures across all three traditions.",
     "A future view could align legal themes with Sinai and post-Sinai reception history."
-  ]
+  ],
+  "source_metadata": {
+    "compiled_by": "Scripture Atlas Editorial Draft",
+    "last_reviewed": "2026-05-10",
+    "citations": [
+      {
+        "tradition": "Torah",
+        "reference": "Exodus 1-20",
+        "note": "Primary passage anchor for this node."
+      },
+      {
+        "tradition": "Christian Bible",
+        "reference": "Exodus 1-20",
+        "note": "Canonical cross-reference used for comparison."
+      },
+      {
+        "tradition": "Qur’an",
+        "reference": "Surah Taha 20",
+        "note": "Primary Qur’anic passage anchor for this node."
+      }
+    ]
+  }
 }

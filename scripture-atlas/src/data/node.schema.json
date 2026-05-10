@@ -10,6 +10,7 @@
     "passages",
     "similarities",
     "differences",
+    "source_metadata",
     "commentary_notes"
   ],
   "properties": {
@@ -32,13 +33,38 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["type", "description"],
+        "required": ["lens", "description"],
         "properties": {
-          "type": { "type": "string" },
+          "lens": {
+            "type": "string",
+            "enum": ["textual", "theological", "historical", "political reception", "translation issue"]
+          },
           "description": { "type": "string" }
         },
         "additionalProperties": false
       }
+    },
+    "source_metadata": {
+      "type": "object",
+      "required": ["compiled_by", "last_reviewed", "citations"],
+      "properties": {
+        "compiled_by": { "type": "string" },
+        "last_reviewed": { "type": "string" },
+        "citations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["tradition", "reference", "note"],
+            "properties": {
+              "tradition": { "type": "string" },
+              "reference": { "type": "string" },
+              "note": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
     },
     "commentary_notes": { "type": "array", "items": { "type": "string" } }
   },
