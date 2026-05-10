@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ScriptureAtlasNode",
+  "type": "object",
+  "required": [
+    "slug",
+    "title",
+    "figures",
+    "themes",
+    "passages",
+    "similarities",
+    "differences",
+    "commentary_notes"
+  ],
+  "properties": {
+    "slug": { "type": "string" },
+    "title": { "type": "string" },
+    "figures": { "type": "array", "items": { "type": "string" } },
+    "themes": { "type": "array", "items": { "type": "string" } },
+    "passages": {
+      "type": "object",
+      "required": ["torah", "christian_bible", "quran"],
+      "properties": {
+        "torah": { "type": "array", "items": { "type": "string" } },
+        "christian_bible": { "type": "array", "items": { "type": "string" } },
+        "quran": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "similarities": { "type": "array", "items": { "type": "string" } },
+    "differences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "commentary_notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}
