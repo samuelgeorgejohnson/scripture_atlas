@@ -44,8 +44,22 @@ export default async function StoryNodePage({ params }: { params: Promise<{ slug
       </section>
 
       <section style={{ marginTop: '1rem' }}>
-        <h2>Differences</h2>
+        <h2>Differences by Lens</h2>
         <DifferenceTags differences={node.differences} />
+      </section>
+
+      <section className="card" style={{ marginTop: '1rem' }}>
+        <h2 style={{ marginTop: 0 }}>Source Metadata</h2>
+        <p className="small" style={{ marginTop: 0 }}>
+          Compiled by {node.source_metadata.compiled_by} · Last reviewed {node.source_metadata.last_reviewed}
+        </p>
+        <ul>
+          {node.source_metadata.citations.map((citation) => (
+            <li key={`${citation.tradition}-${citation.reference}`}>
+              <strong>{citation.tradition}:</strong> {citation.reference} — {citation.note}
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className="card" style={{ marginTop: '1rem' }}>

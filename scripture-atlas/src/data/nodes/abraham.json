@@ -1,12 +1,37 @@
 {
   "slug": "abraham",
   "title": "Abraham / Ibrahim",
-  "figures": ["Abraham", "Ibrahim", "Sarah", "Hagar", "Ishmael", "Isaac"],
-  "themes": ["covenant", "faith", "migration", "promise", "sacrifice"],
+  "figures": [
+    "Abraham",
+    "Ibrahim",
+    "Sarah",
+    "Hagar",
+    "Ishmael",
+    "Isaac"
+  ],
+  "themes": [
+    "covenant",
+    "faith",
+    "migration",
+    "promise",
+    "sacrifice"
+  ],
   "passages": {
-    "torah": ["Genesis 12", "Genesis 15", "Genesis 17", "Genesis 22"],
-    "christian_bible": ["Genesis 12", "Genesis 22", "Galatians 3"],
-    "quran": ["Surah Al-Baqarah 2:124-141", "Surah As-Saffat 37:99-113"]
+    "torah": [
+      "Genesis 12",
+      "Genesis 15",
+      "Genesis 17",
+      "Genesis 22"
+    ],
+    "christian_bible": [
+      "Genesis 12",
+      "Genesis 22",
+      "Galatians 3"
+    ],
+    "quran": [
+      "Surah Al-Baqarah 2:124-141",
+      "Surah As-Saffat 37:99-113"
+    ]
   },
   "similarities": [
     "Abraham is called by God to leave homeland and trust promise.",
@@ -15,11 +40,38 @@
     "A near-sacrifice narrative tests obedience."
   ],
   "differences": [
-    { "type": "lineage_focus", "description": "Traditions emphasize different covenantal lineages in later communal identity." },
-    { "type": "sacrifice_identification", "description": "Islamic tradition commonly associates the near-sacrifice with Ishmael, while Genesis names Isaac." }
+    {
+      "lens": "political reception",
+      "description": "Traditions emphasize different covenantal lineages in later communal identity."
+    },
+    {
+      "lens": "translation issue",
+      "description": "Islamic tradition commonly associates the near-sacrifice with Ishmael, while Genesis names Isaac."
+    }
   ],
   "commentary_notes": [
     "Abraham is a major bridge node for interfaith comparative study.",
     "The node can expand to include shared sites and pilgrimage memory."
-  ]
+  ],
+  "source_metadata": {
+    "compiled_by": "Scripture Atlas Editorial Draft",
+    "last_reviewed": "2026-05-10",
+    "citations": [
+      {
+        "tradition": "Torah",
+        "reference": "Genesis 12",
+        "note": "Primary passage anchor for this node."
+      },
+      {
+        "tradition": "Christian Bible",
+        "reference": "Genesis 12",
+        "note": "Canonical cross-reference used for comparison."
+      },
+      {
+        "tradition": "Qur’an",
+        "reference": "Surah Al-Baqarah 2:124-141",
+        "note": "Primary Qur’anic passage anchor for this node."
+      }
+    ]
+  }
 }

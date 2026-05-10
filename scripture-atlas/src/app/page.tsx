@@ -10,15 +10,23 @@ const nodes = [creation, noah, abraham, joseph, moses];
 export default function HomePage() {
   return (
     <main className="container">
-      <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Scripture Atlas</h1>
-      <p className="small" style={{ maxWidth: 820 }}>
-        A comparative scripture interface aligning the Torah, Christian Bible, and Qur’an by shared stories and themes.
-      </p>
-      <h2 style={{ marginTop: '2rem' }}>Initial Story Nodes</h2>
-      <section className="grid">
-        {nodes.map((node) => (
-          <StoryNodeCard key={node.slug} node={node} />
-        ))}
+      <section className="hero">
+        <p className="eyebrow">Comparative Reading Workspace</p>
+        <h1>Scripture Atlas</h1>
+        <p className="small" style={{ maxWidth: 820 }}>
+          A transparent interface aligning shared stories across the Torah, Christian Bible, and Qur’an while preserving
+          important differences.
+        </p>
+      </section>
+
+      <section style={{ marginTop: '2rem' }}>
+        <h2>Story Nodes</h2>
+        <p className="small">Each node includes passages, differences by lens, and source metadata for traceability.</p>
+        <section className="grid">
+          {nodes.map((node) => (
+            <StoryNodeCard key={node.slug} node={node} />
+          ))}
+        </section>
       </section>
     </main>
   );
