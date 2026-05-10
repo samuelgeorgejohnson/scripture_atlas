@@ -29,7 +29,7 @@ function PassageCell({ passage }: { passage?: AlignedPassage }) {
   const value = normalizePassage(passage);
 
   if (!value) {
-    return <p className="small" style={{ margin: 0 }}>—</p>;
+    return <p className="small" style={{ margin: 0 }}>No direct parallel</p>;
   }
 
   return (
