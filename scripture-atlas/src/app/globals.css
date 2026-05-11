@@ -143,3 +143,88 @@ a { color: inherit; text-decoration: none; }
 .comparison-table th {
   background: var(--panel-soft);
 }
+
+body {
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+}
+
+.reader-sticky-nav {
+  position: sticky;
+  top: 4rem;
+  z-index: 9;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(23, 23, 21, 0.92);
+}
+
+.reader-sticky-nav a {
+  font-size: 0.88rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+.reader-sticky-nav a:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.alignment-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.alignment-row {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.8rem;
+  background: rgba(30, 30, 27, 0.6);
+}
+
+.alignment-row summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.row-summary {
+  color: var(--muted);
+}
+
+.triptych-column-grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.column-panel {
+  border-radius: 8px;
+}
+
+.column-panel h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .triptych-column-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reader-sticky-nav {
+    top: 3.4rem;
+  }
+}
