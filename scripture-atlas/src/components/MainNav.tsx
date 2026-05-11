@@ -1,7 +1,8 @@
 import Link from 'next/link';
 
 const navItems = [
-  { href: '/', label: 'Scripture Atlas' },
+  { href: '/', label: 'SpiritOS' },
+  { href: '/atlas', label: 'Scripture Atlas' },
   { href: '/philosophy', label: 'Philosophy & Ethics' }
 ];
 
