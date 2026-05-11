@@ -1,144 +1,265 @@
 {
-  "slug": "creation",
+  "slug": "creation-adam",
   "title": "Creation / Adam",
   "figures": [
     "Adam",
-    "Eve",
+    "Eve (Havvah)",
     "Hawwa"
   ],
   "themes": [
-    "origin",
-    "stewardship",
-    "obedience",
-    "fall",
-    "mercy"
+    "divine creation initiative",
+    "human vocation",
+    "command and boundary",
+    "disobedience sequence",
+    "descent/exile",
+    "ongoing guidance"
+  ],
+  "alignment_rows": [
+    {
+      "beat": "Opening frame for humanity",
+      "summary": "All three traditions frame Adam within a divine speech-act, but the narrative entry point differs (cosmic creation sequence vs. angelic announcement).",
+      "difference_tags": ["textual"],
+      "torah": {
+        "references": ["Genesis 1:1-2", "Genesis 1:26"],
+        "translation": "JPS/MT-aligned tradition labels",
+        "notes": [
+          {
+            "title": "Narrative entry",
+            "detail": "Adam appears after an ordered creation progression."
+          }
+        ]
+      },
+      "christian_bible": {
+        "references": ["Genesis 1:1-2", "Genesis 1:26"],
+        "translation": "OT Genesis canonical form",
+        "notes": [
+          {
+            "title": "Narrative entry",
+            "detail": "Shares Genesis sequence placement, then extended by later NT intertextual use."
+          }
+        ]
+      },
+      "quran": {
+        "references": ["Qur'an 2:30", "Qur'an 15:28-29"],
+        "translation": "Standard modern English translation families",
+        "notes": [
+          {
+            "title": "Narrative entry",
+            "detail": "Adam begins with divine declaration to angels and material/origin statements across surahs."
+          }
+        ]
+      }
+    },
+    {
+      "beat": "Formation of the human",
+      "summary": "Each corpus marks humans as specially formed; wording clusters differ (image-language in Genesis; clay/dust motifs in Qur'an).",
+      "difference_tags": ["textual", "translation issue"],
+      "torah": {
+        "references": ["Genesis 1:26-27", "Genesis 2:7"],
+        "notes": [
+          {
+            "title": "Wording profile",
+            "detail": "Uses image/likeness and breath-of-life language in two adjacent creation presentations."
+          }
+        ]
+      },
+      "christian_bible": {
+        "references": ["Genesis 1:26-27", "Genesis 2:7"],
+        "notes": [
+          {
+            "title": "Wording profile",
+            "detail": "Retains Genesis phrasing with translation variation by English edition."
+          }
+        ]
+      },
+      "quran": {
+        "references": ["Qur'an 15:26-29", "Qur'an 38:71-72"],
+        "notes": [
+          {
+            "title": "Wording profile",
+            "detail": "Reiterates clay-origin and divine breath motifs in recurring formulaic diction."
+          }
+        ]
+      }
+    },
+    {
+      "beat": "Human role and placement",
+      "summary": "All three place the first humans in a provisioned setting with a delegated role; role vocabulary differs (dominion/till-keep vs khalifah frame).",
+      "difference_tags": ["textual"],
+      "torah": {
+        "references": ["Genesis 1:28", "Genesis 2:15"],
+        "notes": [
+          {
+            "title": "Role terms",
+            "detail": "Mandate language emphasizes fruitfulness and tending/guarding the garden."
+          }
+        ]
+      },
+      "christian_bible": {
+        "references": ["Genesis 1:28", "Genesis 2:15"],
+        "notes": [
+          {
+            "title": "Role terms",
+            "detail": "Uses the same Genesis role terms in canonical Old Testament form."
+          }
+        ]
+      },
+      "quran": {
+        "references": ["Qur'an 2:30", "Qur'an 2:35"],
+        "notes": [
+          {
+            "title": "Role terms",
+            "detail": "Frames human role through khalifah language and garden residence command."
+          }
+        ]
+      }
+    },
+    {
+      "beat": "Prohibition and boundary",
+      "summary": "A concrete prohibition structures the plot in each tradition, though the exact command wording and warning sequence vary.",
+      "difference_tags": ["textual", "translation issue"],
+      "torah": {
+        "references": ["Genesis 2:16-17"],
+        "notes": [
+          {
+            "title": "Command form",
+            "detail": "Direct command includes a consequence clause linked to a named tree."
+          }
+        ]
+      },
+      "christian_bible": {
+        "references": ["Genesis 2:16-17"],
+        "notes": [
+          {
+            "title": "Command form",
+            "detail": "Parallel command syntax with translation-level differences in modality."
+          }
+        ]
+      },
+      "quran": {
+        "references": ["Qur'an 2:35", "Qur'an 20:117"],
+        "notes": [
+          {
+            "title": "Command form",
+            "detail": "Tree prohibition appears with warning language linked to enmity/deception context."
+          }
+        ]
+      }
+    },
+    {
+      "beat": "Temptation and transgression sequence",
+      "summary": "All include a deception-to-eating sequence; actor labeling and dialogue staging differ across corpora.",
+      "difference_tags": ["textual"],
+      "torah": {
+        "references": ["Genesis 3:1-7"],
+        "notes": [
+          {
+            "title": "Sequence",
+            "detail": "Serpent dialogue precedes woman/man eating in a tightly narrated scene."
+          }
+        ]
+      },
+      "christian_bible": {
+        "references": ["Genesis 3:1-7"],
+        "notes": [
+          {
+            "title": "Sequence",
+            "detail": "Mirrors Genesis sequence and wording structure by translation tradition."
+          }
+        ]
+      },
+      "quran": {
+        "references": ["Qur'an 7:20-22", "Qur'an 20:120-121"],
+        "notes": [
+          {
+            "title": "Sequence",
+            "detail": "Iblis/Shaytan whispering motif is distributed across retellings with compressed scene movement."
+          }
+        ]
+      }
+    },
+    {
+      "beat": "Aftermath: descent/exile and guidance",
+      "summary": "All three narrate removal from prior ease followed by continued divine address; explicit repentance formula is most foregrounded in Qur'anic passages.",
+      "difference_tags": ["textual", "theological"],
+      "torah": {
+        "references": ["Genesis 3:21-24"],
+        "notes": [
+          {
+            "title": "Aftermath structure",
+            "detail": "Judgment, clothing, and expulsion form a single narrative arc."
+          }
+        ]
+      },
+      "christian_bible": {
+        "references": ["Genesis 3:21-24"],
+        "notes": [
+          {
+            "title": "Aftermath structure",
+            "detail": "Maintains Genesis arc; later Christian texts often echo Adam typology beyond this scene."
+          }
+        ]
+      },
+      "quran": {
+        "references": ["Qur'an 2:36-38", "Qur'an 20:122-123"],
+        "notes": [
+          {
+            "title": "Aftermath structure",
+            "detail": "Descent to earth is paired with accepted repentance and future-guidance promise."
+          }
+        ]
+      }
+    }
   ],
   "similarities": [
-    "Humanity is specially created by God.",
-    "The first humans dwell in a garden-like setting.",
-    "Disobedience leads to exile from ease.",
-    "Divine guidance continues after the fall."
+    "Adam's account is initiated by divine speech and intention rather than human action.",
+    "A protected/provisioned dwelling precedes transgression.",
+    "A specific prohibition functions as the central narrative boundary.",
+    "Deception precedes disobedience in plot sequence.",
+    "Post-transgression life continues under divine address/guidance."
   ],
   "differences": [
     {
-      "lens": "theological",
-      "description": "Christian readings often connect Adam to doctrines of sin and redemption through Christ."
+      "lens": "textual",
+      "description": "Torah/Tanakh and Christian Bible preserve a contiguous Eden plotline in Genesis 2-3, while Qur'anic material appears as distributed retellings across multiple surahs."
+    },
+    {
+      "lens": "textual",
+      "description": "Actor labeling differs: Genesis uses 'serpent' in-scene; Qur'anic passages identify Iblis/Shaytan as deceiver in corresponding episodes."
+    },
+    {
+      "lens": "translation issue",
+      "description": "Key role terms (e.g., dominion/stewardship; khalifah) and consequence language vary by translation choices, affecting perceived emphasis without altering core sequence."
     },
     {
       "lens": "theological",
-      "description": "Qur’anic framing stresses repentance and guidance without inherited guilt."
+      "description": "Repentance is explicitly verbalized in Qur'an 2:37/20:122 sequence, whereas Genesis 3 emphasizes judgment-exile progression with implied mercy motifs."
     }
   ],
-  "commentary_notes": [
-    "Creation narratives ground each tradition’s view of human purpose.",
-    "A timeline view can later link Adam traditions with prophetic succession."
-  ],
   "source_metadata": {
-    "compiled_by": "Scripture Atlas Editorial Draft",
-    "last_reviewed": "2026-05-10",
+    "compiled_by": "SpiritOS Seed Draft",
+    "last_reviewed": "2026-05-11",
     "citations": [
       {
         "tradition": "Torah/Tanakh",
-        "reference": "Genesis 1-3 (JPS 1917)",
-        "note": "Reference anchors only; verse text intentionally left as placeholder."
+        "reference": "Genesis 1:1-2:17; 3:1-24",
+        "note": "Narrative structure and sequence anchors for creation-to-exile arc."
       },
       {
         "tradition": "Christian Bible",
-        "reference": "Genesis 1-3 (KJV)",
-        "note": "Reference anchors only; verse text intentionally left as placeholder."
+        "reference": "Genesis 1:1-2:17; 3:1-24",
+        "note": "Shared Genesis storyline used for wording and sequence comparison."
       },
       {
-        "tradition": "Qur’an",
-        "reference": "2:30-39, 7:11-27, 20:115-123",
-        "note": "Reference anchors only; translation source still under review for licensing/usage consistency."
+        "tradition": "Qur'an",
+        "reference": "2:30-39; 7:11-27; 15:26-42; 20:115-123; 38:71-85",
+        "note": "Distributed Adam episodes used to map cross-surah sequence and thematic parallels."
       }
     ]
   },
-  "alignment_rows": [
-    {
-      "beat": "Creation begins",
-      "note": "All three traditions open Adam’s story with divine initiative in creating or inaugurating the created order.",
-      "torah": {
-        "reference": "Genesis 1:1",
-        "translation": "JPS 1917 (placeholder text)",
-        "text": "Placeholder verse text.",
-        "notes": "Classical opening of Torah/Tanakh creation account."
-      },
-      "christian_bible": {
-        "reference": "Genesis 1:1",
-        "translation": "KJV (placeholder text)",
-        "text": "Placeholder verse text.",
-        "notes": "Shared canonical opening with Hebrew Bible text tradition."
-      },
-      "quran": {
-        "reference": "Qur’an 2:30",
-        "translation": "Placeholder translation",
-        "text": "Placeholder verse text.",
-        "notes": "Begins Adam cycle with divine declaration to the angels."
-      }
-    },
-    {
-      "beat": "God creates/organizes heaven and earth",
-      "note": "Torah/Tanakh and Christian Bible narrate ordered creation sequence; Qur’an references divine ordering across passages.",
-      "torah": {"reference": "Genesis 1:1-10", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Cosmic structuring by divine speech."},
-      "christian_bible": {"reference": "Genesis 1:1-10", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Parallel seven-day framework passage."},
-      "quran": {"reference": "Qur’an 41:9-12", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Frequently cited for creation-order motifs."}
-    },
-    {
-      "beat": "Humanity is created",
-      "note": "All traditions mark humanity as a distinct act of creation with elevated role.",
-      "torah": {"reference": "Genesis 1:26-27; 2:7", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Image-language and Adam’s formation."},
-      "christian_bible": {"reference": "Genesis 1:26-27; 2:7", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Shared Genesis wording in Christian canon."},
-      "quran": {"reference": "Qur’an 15:28-29; 38:71-72", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Adam formed and enlivened by God."}
-    },
-    {
-      "beat": "Human purpose / stewardship",
-      "note": "Purpose language appears as dominion/stewardship in Genesis and khalifah framing in Qur’an.",
-      "torah": {"reference": "Genesis 1:28", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Mandate to fill and tend creation."},
-      "christian_bible": {"reference": "Genesis 1:28", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Often read as vocation and stewardship."},
-      "quran": {"reference": "Qur’an 2:30", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Human vicegerency/khalifah motif."}
-    },
-    {
-      "beat": "Garden or dwelling place",
-      "note": "Eden/Jannah setting provides initial state of provision and nearness.",
-      "torah": {"reference": "Genesis 2:8-15", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Garden in Eden and charge to keep it."},
-      "christian_bible": {"reference": "Genesis 2:8-15", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Shared Eden narrative locus."},
-      "quran": {"reference": "Qur’an 2:35", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Adam and spouse placed in the garden."}
-    },
-    {
-      "beat": "Command / prohibition",
-      "note": "Each tradition includes a divine command tied to a specific forbidden tree/action.",
-      "torah": {"reference": "Genesis 2:16-17", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Explicit prohibition given before transgression."},
-      "christian_bible": {"reference": "Genesis 2:16-17", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Canonical basis for command narrative."},
-      "quran": {"reference": "Qur’an 2:35; 20:117", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Prohibition and warning about Satan."}
-    },
-    {
-      "beat": "Temptation or disobedience",
-      "note": "Transgression follows deceptive prompting; narrative details and theological emphases differ.",
-      "torah": {"reference": "Genesis 3:1-7", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Serpent episode and eating the fruit."},
-      "christian_bible": {"reference": "Genesis 3:1-7", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Foundational fall narrative in Christian theology."},
-      "quran": {"reference": "Qur’an 7:20-22; 20:120-121", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Iblis whispers leading to lapse."}
-    },
-    {
-      "beat": "Exile/descent",
-      "note": "Departure from the garden marks a shift to earthly toil and moral testing.",
-      "torah": {"reference": "Genesis 3:23-24", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Expulsion from Eden narrative."},
-      "christian_bible": {"reference": "Genesis 3:23-24", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Exile motif and guarded return."},
-      "quran": {"reference": "Qur’an 2:36; 7:24", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": ""}
-    },
-    {
-      "beat": "Repentance or mercy",
-      "note": "Mercy themes are present in all three, though explicit repentance language is strongest in Qur’anic rendering.",
-      "torah": {"reference": "Genesis 3:21", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "God clothes the humans after judgment."},
-      "christian_bible": {"reference": "Genesis 3:21", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Read as sign of continuing divine care."},
-      "quran": {"reference": "Qur’an 2:37", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Adam receives words and is forgiven."}
-    },
-    {
-      "beat": "Ongoing guidance",
-      "note": "Post-fall life includes continued divine instruction; Torah/Christian text here is broader-canonical rather than a single Adam-only command.",
-      "torah": {"reference": "Genesis 3:15-19", "translation": "JPS 1917 (placeholder text)", "text": "Placeholder verse text.", "notes": "Judgment sayings frame human condition and future path."},
-      "christian_bible": {"reference": "Genesis 3:15-19", "translation": "KJV (placeholder text)", "text": "Placeholder verse text.", "notes": "Often tied to later salvation-history readings."},
-      "quran": {"reference": "Qur’an 2:38; 20:123", "translation": "Placeholder translation", "text": "Placeholder verse text.", "notes": "Guidance promised for earthly life after descent."}
-    }
+  "commentary_notes": [
+    "Scope constrained to narrative structure, sequence, wording profiles, thematic parallels, and explicit differences.",
+    "This node intentionally avoids theological adjudication or harmonization claims.",
+    "Schema is reusable for future SpiritOS nodes via alignment_rows and source_metadata.citations arrays."
   ]
 }
