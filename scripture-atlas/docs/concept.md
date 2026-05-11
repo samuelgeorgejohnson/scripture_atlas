@@ -1,6 +1,6 @@
 # Concept
 
-Scripture Atlas is a comparative interface for navigating shared Abrahamic story nodes.
+SpiritOS begins with Scripture Atlas, a comparative interface for navigating shared Abrahamic story nodes.
 
 Principles:
 - Side-by-side reading without forced harmonization.

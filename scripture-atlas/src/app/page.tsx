@@ -12,7 +12,8 @@ export default function HomePage() {
     <main className="container">
       <section className="hero">
         <p className="eyebrow">Comparative Reading Workspace</p>
-        <h1>Scripture Atlas</h1>
+        <h1>SpiritOS</h1>
+        <p className="small" style={{ marginTop: '0.25rem', marginBottom: 0 }}>Module 01: Scripture Atlas</p>
         <p className="small" style={{ maxWidth: 820 }}>
           A transparent interface aligning shared stories across the Torah, Christian Bible, and Qur’an while preserving
           important differences.

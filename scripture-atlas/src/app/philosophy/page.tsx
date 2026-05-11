@@ -3,7 +3,7 @@ export default function PhilosophyPage() {
     <main className="container">
       <h1>Philosophy & Ethics</h1>
       <p className="small" style={{ maxWidth: 900 }}>
-        Scripture Atlas is designed as a transparent comparison tool. It does not rank traditions, resolve doctrine, or
+        SpiritOS's Scripture Atlas module is designed as a transparent comparison tool. It does not rank traditions, resolve doctrine, or
         reduce disagreements to a single viewpoint.
       </p>
 
