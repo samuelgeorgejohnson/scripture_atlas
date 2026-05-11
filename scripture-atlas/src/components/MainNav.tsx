@@ -10,7 +10,7 @@ export function MainNav() {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="brand">
-          Scripture Atlas
+          SpiritOS · Scripture Atlas
         </Link>
         <nav aria-label="Primary">
           <ul className="nav-list">

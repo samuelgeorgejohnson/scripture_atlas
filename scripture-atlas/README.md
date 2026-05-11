@@ -1,6 +1,6 @@
-# Scripture Atlas
+# SpiritOS
 
-Scripture Atlas is an open-source comparative scripture project mapping shared stories, figures, and themes across the Torah, Christian Bible, and Qur’an.
+SpiritOS is an open-source platform for comparative sacred-text exploration. Its first module, **Scripture Atlas**, maps shared stories, figures, and themes across the Torah, Christian Bible, and Qur’an.
 
 The project does not attempt to flatten these traditions into sameness. Instead, it visualizes how related sacred traditions preserve, reinterpret, and diverge around shared narrative memory.
 
