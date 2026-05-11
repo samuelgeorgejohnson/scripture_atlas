@@ -23,6 +23,10 @@ function EntryCell({ entry }: { entry?: TraditionEntry }) {
   );
 }
 
+function formatDifferenceTag(tag: AlignmentRow['difference_tags'][number]) {
+  return tag.category ? `${tag.lens}: ${tag.category}` : tag.lens;
+}
+
 export function TriptychReader({ alignmentRows }: { alignmentRows: AlignmentRow[] }) {
   return (
     <section className="card">
@@ -45,7 +49,11 @@ export function TriptychReader({ alignmentRows }: { alignmentRows: AlignmentRow[
                   {row.summary ? <p className="small" style={{ margin: '0.45rem 0 0' }}>{row.summary}</p> : null}
                   {row.difference_tags?.length ? (
                     <div style={{ marginTop: '0.45rem' }}>
-                      {row.difference_tags.map((tag) => <span className="tag" key={`${row.beat}-${tag}`}>{tag}</span>)}
+                      {row.difference_tags.map((tag) => (
+                        <span className="tag" key={`${row.beat}-${tag.lens}-${tag.category ?? 'general'}`}>
+                          {formatDifferenceTag(tag)}
+                        </span>
+                      ))}
                     </div>
                   ) : null}
                 </td>
