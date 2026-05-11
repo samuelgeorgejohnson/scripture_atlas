@@ -1,14 +1,27 @@
 # SpiritOS
 
-SpiritOS is an open-source platform for comparative sacred-text exploration. Its first module, **Scripture Atlas**, maps shared stories, figures, and themes across the Torah, Christian Bible, and Qur’an.
+SpiritOS is a digital humanities platform for comparative sacred-text research.
 
-The project does not attempt to flatten these traditions into sameness. Instead, it visualizes how related sacred traditions preserve, reinterpret, and diverge around shared narrative memory.
+**Scripture Atlas** is its first module/application: an alignment workspace for tracing how related traditions narrate shared figures, events, and themes.
 
-## Core Question
+## Mission Statement
 
-How do Abrahamic traditions remember the same figures and events differently?
+SpiritOS supports rigorous, transparent comparison of sacred traditions while preserving theological difference and historical context.
 
-## Initial Nodes
+## Core Principles
+
+- Alignment without forced equivalence
+- Comparative sacred-text mapping
+- Preservation of theological difference
+- Interpretive transparency
+- Historical contextualization
+- Archival/research tone
+
+## Scripture Atlas (Module 01)
+
+Scripture Atlas currently maps selected narrative nodes across the Torah, Christian Bible, and Qur’an. Each node includes aligned passages, difference lenses, and source metadata for interpretive traceability.
+
+## Current Node Set
 
 - Creation / Adam
 - Noah / Nuh
@@ -16,9 +29,9 @@ How do Abrahamic traditions remember the same figures and events differently?
 - Joseph / Yusuf
 - Moses / Musa
 
-## Project Structure
+## Repository Structure
 
-```
+```text
 scripture-atlas/
   README.md
   package.json
@@ -26,7 +39,9 @@ scripture-atlas/
     app/
       page.tsx
       nodes/[slug]/page.tsx
+      philosophy/page.tsx
     components/
+      MainNav.tsx
       TriptychReader.tsx
       StoryNodeCard.tsx
       TimelineView.tsx
@@ -38,7 +53,6 @@ scripture-atlas/
         abraham.json
         joseph.json
         moses.json
-  public/
   docs/
     concept.md
     data-model.md
