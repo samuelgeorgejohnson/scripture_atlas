@@ -2,6 +2,7 @@
   "name": "spiritos",
   "version": "0.1.0",
   "private": true,
+  "description": "SpiritOS platform prototype. Includes Scripture Atlas for comparative sacred-text mapping.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

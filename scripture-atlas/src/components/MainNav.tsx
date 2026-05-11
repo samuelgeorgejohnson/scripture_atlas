@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const navItems = [
-  { href: '/', label: 'Atlas' },
+  { href: '/', label: 'Scripture Atlas' },
   { href: '/philosophy', label: 'Philosophy & Ethics' }
 ];
 
@@ -10,7 +10,7 @@ export function MainNav() {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="brand">
-          SpiritOS · Scripture Atlas
+          SpiritOS
         </Link>
         <nav aria-label="Primary">
           <ul className="nav-list">
