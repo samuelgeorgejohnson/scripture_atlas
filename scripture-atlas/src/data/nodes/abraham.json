@@ -234,5 +234,102 @@
         ]
       }
     }
+  ],
+  "graph_entities": [
+    {
+      "id": "story_node:abraham",
+      "entity_type": "story_node",
+      "label": "Abraham / Ibrahim"
+    },
+    {
+      "id": "figure:abraham",
+      "entity_type": "figure",
+      "label": "Abraham"
+    },
+    {
+      "id": "figure:isaac",
+      "entity_type": "figure",
+      "label": "Isaac"
+    },
+    {
+      "id": "figure:ishmael",
+      "entity_type": "figure",
+      "label": "Ishmael"
+    },
+    {
+      "id": "theme:covenant",
+      "entity_type": "theme",
+      "label": "Covenant"
+    },
+    {
+      "id": "theme:migration",
+      "entity_type": "theme",
+      "label": "Migration"
+    },
+    {
+      "id": "theme:sacrifice",
+      "entity_type": "theme",
+      "label": "Sacrifice"
+    },
+    {
+      "id": "location:kaaba",
+      "entity_type": "location",
+      "label": "Kaaba"
+    },
+    {
+      "id": "concept:circumcision",
+      "entity_type": "concept",
+      "label": "Circumcision"
+    }
+  ],
+  "relationships": [
+    {
+      "edge_id": "edge:abraham-has-covenant",
+      "from": "story_node:abraham",
+      "to": "theme:covenant",
+      "type": "has_theme"
+    },
+    {
+      "edge_id": "edge:abraham-has-migration",
+      "from": "story_node:abraham",
+      "to": "theme:migration",
+      "type": "has_theme"
+    },
+    {
+      "edge_id": "edge:abraham-has-sacrifice",
+      "from": "story_node:abraham",
+      "to": "theme:sacrifice",
+      "type": "has_theme"
+    },
+    {
+      "edge_id": "edge:abraham-has-isaac",
+      "from": "story_node:abraham",
+      "to": "figure:isaac",
+      "type": "has_figure"
+    },
+    {
+      "edge_id": "edge:abraham-has-ishmael",
+      "from": "story_node:abraham",
+      "to": "figure:ishmael",
+      "type": "has_figure"
+    },
+    {
+      "edge_id": "edge:abraham-related-kaaba",
+      "from": "story_node:abraham",
+      "to": "location:kaaba",
+      "type": "associated_with"
+    },
+    {
+      "edge_id": "edge:abraham-related-circumcision",
+      "from": "story_node:abraham",
+      "to": "concept:circumcision",
+      "type": "related_concept"
+    },
+    {
+      "edge_id": "edge:isaac-sibling-ishmael",
+      "from": "figure:isaac",
+      "to": "figure:ishmael",
+      "type": "sibling_of"
+    }
   ]
 }

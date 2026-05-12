@@ -2,79 +2,297 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "ScriptureAtlasNode",
   "type": "object",
-  "required": ["slug", "title", "figures", "themes", "alignment_rows", "similarities", "differences", "source_metadata", "commentary_notes"],
+  "required": [
+    "slug",
+    "title",
+    "figures",
+    "themes",
+    "alignment_rows",
+    "similarities",
+    "differences",
+    "source_metadata",
+    "commentary_notes"
+  ],
   "properties": {
-    "slug": { "type": "string" },
-    "title": { "type": "string" },
-    "figures": { "type": "array", "items": { "type": "string" } },
-    "themes": { "type": "array", "items": { "type": "string" } },
+    "slug": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "alignment_rows": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["beat"],
+        "required": [
+          "beat"
+        ],
         "properties": {
-          "beat": { "type": "string" },
-          "summary": { "type": "string" },
-          "difference_tags": { "type": "array", "items": { "$ref": "#/$defs/lens" } },
-          "torah": { "$ref": "#/$defs/traditionEntry" },
-          "christian_bible": { "$ref": "#/$defs/traditionEntry" },
-          "quran": { "$ref": "#/$defs/traditionEntry" }
+          "beat": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "difference_tags": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/lens"
+            }
+          },
+          "torah": {
+            "$ref": "#/$defs/traditionEntry"
+          },
+          "christian_bible": {
+            "$ref": "#/$defs/traditionEntry"
+          },
+          "quran": {
+            "$ref": "#/$defs/traditionEntry"
+          }
         },
         "additionalProperties": false
       }
     },
-    "similarities": { "type": "array", "items": { "type": "string" } },
-    "differences": { "type": "array", "items": { "$ref": "#/$defs/differenceNote" } },
+    "similarities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "differences": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/differenceNote"
+      }
+    },
     "source_metadata": {
       "type": "object",
-      "required": ["compiled_by", "last_reviewed", "citations"],
+      "required": [
+        "compiled_by",
+        "last_reviewed",
+        "citations"
+      ],
       "properties": {
-        "compiled_by": { "type": "string" },
-        "last_reviewed": { "type": "string" },
-        "citations": { "type": "array", "items": { "$ref": "#/$defs/sourceCitation" } }
+        "compiled_by": {
+          "type": "string"
+        },
+        "last_reviewed": {
+          "type": "string"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceCitation"
+          }
+        }
       },
       "additionalProperties": false
     },
-    "commentary_notes": { "type": "array", "items": { "type": "string" } }
+    "commentary_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "graph_entities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/graphEntityReference"
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relationshipEdge"
+      }
+    }
   },
   "$defs": {
-    "lens": { "type": "string", "enum": ["textual", "theological", "historical", "political reception", "translation issue"] },
+    "lens": {
+      "type": "string",
+      "enum": [
+        "textual",
+        "theological",
+        "historical",
+        "political reception",
+        "translation issue"
+      ]
+    },
     "differenceNote": {
       "type": "object",
-      "required": ["lens", "description"],
+      "required": [
+        "lens",
+        "description"
+      ],
       "properties": {
-        "lens": { "$ref": "#/$defs/lens" },
-        "description": { "type": "string" }
+        "lens": {
+          "$ref": "#/$defs/lens"
+        },
+        "description": {
+          "type": "string"
+        }
       },
       "additionalProperties": false
     },
     "commentaryNote": {
       "type": "object",
-      "required": ["title", "detail"],
+      "required": [
+        "title",
+        "detail"
+      ],
       "properties": {
-        "title": { "type": "string" },
-        "detail": { "type": "string" }
+        "title": {
+          "type": "string"
+        },
+        "detail": {
+          "type": "string"
+        }
       },
       "additionalProperties": false
     },
     "traditionEntry": {
       "type": "object",
       "properties": {
-        "references": { "type": "array", "items": { "type": "string" } },
-        "translation": { "type": "string" },
-        "excerpt": { "type": "string" },
-        "notes": { "type": "array", "items": { "$ref": "#/$defs/commentaryNote" } }
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "translation": {
+          "type": "string"
+        },
+        "excerpt": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/commentaryNote"
+          }
+        }
       },
       "additionalProperties": false
     },
     "sourceCitation": {
       "type": "object",
-      "required": ["tradition", "reference", "note"],
+      "required": [
+        "tradition",
+        "reference",
+        "note"
+      ],
       "properties": {
-        "tradition": { "type": "string" },
-        "reference": { "type": "string" },
-        "note": { "type": "string" }
+        "tradition": {
+          "type": "string"
+        },
+        "reference": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "graphEntityType": {
+      "type": "string",
+      "enum": [
+        "story_node",
+        "figure",
+        "theme",
+        "location",
+        "concept"
+      ]
+    },
+    "relationshipType": {
+      "type": "string",
+      "enum": [
+        "has_figure",
+        "has_theme",
+        "located_in",
+        "related_concept",
+        "parent_of",
+        "sibling_of",
+        "associated_with",
+        "symbolizes",
+        "fulfills"
+      ]
+    },
+    "graphEntityReference": {
+      "type": "object",
+      "required": [
+        "id",
+        "entity_type",
+        "label"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "entity_type": {
+          "$ref": "#/$defs/graphEntityType"
+        },
+        "label": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "relationshipEdge": {
+      "type": "object",
+      "required": [
+        "edge_id",
+        "from",
+        "to",
+        "type"
+      ],
+      "properties": {
+        "edge_id": {
+          "type": "string"
+        },
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/$defs/relationshipType"
+        },
+        "weight": {
+          "type": "number"
+        },
+        "confidence": {
+          "type": "number"
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          }
+        }
       },
       "additionalProperties": false
     }
