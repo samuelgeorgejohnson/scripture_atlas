@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 const navItems = [
   { href: '/', label: 'Scripture Atlas' },
+  { href: '/atlas', label: 'Atlas' },
   { href: '/philosophy', label: 'Philosophy & Ethics' }
 ];
 
