@@ -1,230 +1,44 @@
 :root {
-  color-scheme: dark;
-  --bg: #0f0f0e;
-  --panel: #171715;
-  --panel-soft: #1e1e1b;
-  --text: #ece8de;
-  --muted: #b8af9d;
-  --accent: #c7a56a;
-  --border: #3a362d;
+  --bg: #f3eee2;
+  --panel: #faf6ec;
+  --text: #2c2419;
+  --muted: #695b49;
+  --border: #d5c8b0;
+  --shadow: 0 6px 20px rgba(73, 52, 24, 0.08);
+  --bible: #8e2331;
+  --torah: #3e3a89;
+  --quran: #1f6f3f;
 }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:1.2rem 1rem 3rem}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem;box-shadow:var(--shadow)}
+.small{color:var(--muted);font-size:.94rem}
+.site-header{position:sticky;top:0;background:rgba(250,246,236,.95);backdrop-filter:blur(4px);border-bottom:1px solid var(--border);z-index:30}
+.header-inner{display:flex;justify-content:space-between;align-items:center;padding-top:.75rem;padding-bottom:.75rem}
+.brand{font-weight:700;font-size:1.2rem}
+.nav-list{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.nav-link{color:var(--muted)} .nav-link:hover{color:var(--text)}
+.hero h1{margin:.1rem 0 .5rem;font-size:2.2rem}.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
 
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Georgia, "Times New Roman", serif;
-}
+.triptych-desktop{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.triptych-mobile{display:none}
+.triptych-mobile-tabs{display:none;margin-bottom:.8rem;gap:.5rem}
+.triptych-mobile-tabs button{padding:.45rem .7rem;border:1px solid var(--border);border-radius:999px;background:#fff8eb;color:var(--muted);font-family:inherit}
+.triptych-mobile-tabs .active{font-weight:700;color:var(--text)}
+.reader-column h2{margin-top:0}
+.reader-controls{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-bottom:.8rem}
+.reader-controls label{font-size:.85rem;color:var(--muted);display:grid;gap:.2rem}
+.reader-controls select,.search-input{width:100%;padding:.45rem;border:1px solid var(--border);border-radius:8px;background:#fffdf8;font-family:inherit;color:var(--text)}
+.accent-bible{border-top:3px solid var(--bible)}
+.accent-torah{border-top:3px solid var(--torah)}
+.accent-quran{border-top:3px solid var(--quran)}
 
-a { color: inherit; text-decoration: none; }
-
-.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem 4rem; }
-
-.card {
-  background: linear-gradient(160deg, var(--panel), var(--panel-soft));
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.landing-panels {
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.triptych {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-@media (max-width: 900px) {
-  .triptych { grid-template-columns: 1fr; }
-}
-
-.small { color: var(--muted); font-size: 0.92rem; }
-.tag {
-  display: inline-block;
-  margin: 0.15rem 0.35rem 0.15rem 0;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
-.site-header {
-  border-bottom: 1px solid var(--border);
-  background: rgba(15, 15, 14, 0.95);
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(4px);
-  z-index: 10;
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.85rem;
-  padding-bottom: 0.85rem;
-}
-
-.brand {
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link {
-  color: var(--muted);
-}
-
-.nav-link:hover {
-  color: var(--text);
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin: 0 0 0.5rem;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  font-size: 0.78rem;
-  margin-bottom: 0.4rem;
-}
-
-.module-label {
-  margin-top: 0.25rem;
-  margin-bottom: 0;
-}
-
-.hero-copy {
-  max-width: 820px;
-}
-
-.comparison-table-wrap {
-  overflow-x: auto;
-}
-
-.comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 820px;
-}
-
-.comparison-table th,
-.comparison-table td {
-  border: 1px solid var(--border);
-  padding: 0.75rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-.comparison-table th {
-  background: var(--panel-soft);
-}
-
-body {
-  line-height: 1.6;
-}
-
-h1, h2, h3 {
-  letter-spacing: 0.01em;
-  line-height: 1.25;
-}
-
-.reader-sticky-nav {
-  position: sticky;
-  top: 4rem;
-  z-index: 9;
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin: 1rem 0;
-  padding: 0.6rem;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: rgba(23, 23, 21, 0.92);
-}
-
-.reader-sticky-nav a {
-  font-size: 0.88rem;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.2rem 0.6rem;
-}
-
-.reader-sticky-nav a:hover {
-  color: var(--text);
-  border-color: var(--accent);
-}
-
-.alignment-list {
-  display: grid;
-  gap: 0.8rem;
-}
-
-.alignment-row {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.8rem;
-  background: rgba(30, 30, 27, 0.6);
-}
-
-.alignment-row summary {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  cursor: pointer;
-}
-
-.row-summary {
-  color: var(--muted);
-}
-
-.triptych-column-grid {
-  display: grid;
-  gap: 0.8rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.column-panel {
-  border-radius: 8px;
-}
-
-.column-panel h3 {
-  margin: 0 0 0.4rem;
-  font-size: 1rem;
-  color: var(--accent);
-}
-
-@media (max-width: 900px) {
-  .triptych-column-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .reader-sticky-nav {
-    top: 3.4rem;
-  }
+@media (max-width: 900px){
+  .triptych-desktop{display:none}
+  .triptych-mobile{display:block}
+  .triptych-mobile-tabs{display:flex;flex-wrap:wrap}
+  .container{padding-left:.75rem;padding-right:.75rem}
 }

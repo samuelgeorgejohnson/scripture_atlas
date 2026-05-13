@@ -1,76 +1,81 @@
-import { AlignmentRow, TraditionEntry } from '@/data/types';
+'use client';
 
-function EntryCell({ entry }: { entry?: TraditionEntry }) {
-  if (!entry) return <p className="small" style={{ margin: 0 }}>No direct parallel</p>;
+import { useMemo, useState } from 'react';
+import { scriptureSamples, TraditionKey } from '@/data/scriptureSamples';
+import { AlignmentRow } from '@/data/types';
 
-  const hasContent = (entry.references && entry.references.length > 0) || entry.translation || entry.excerpt || (entry.notes && entry.notes.length > 0);
-  if (!hasContent) return <p className="small" style={{ margin: 0 }}>No direct parallel</p>;
+const traditionMeta: Record<TraditionKey, { label: string; accentClass: string }> = {
+  bible: { label: 'Bible', accentClass: 'accent-bible' },
+  torah: { label: 'Torah', accentClass: 'accent-torah' },
+  quran: { label: 'Quran', accentClass: 'accent-quran' }
+};
+
+function PassageColumn({ tradition }: { tradition: TraditionKey }) {
+  const books = scriptureSamples[tradition];
+  const [bookIdx, setBookIdx] = useState(0);
+  const [chapterIdx, setChapterIdx] = useState(0);
+
+  const selectedBook = books[bookIdx];
+  const selectedChapter = selectedBook.chapters[chapterIdx];
 
   return (
-    <>
-      {entry.references && entry.references.length > 0 ? (
-        <p style={{ margin: 0 }}><strong>{entry.references.join(' · ')}</strong></p>
-      ) : null}
-      {entry.translation ? <p className="small" style={{ margin: '0.25rem 0 0' }}>{entry.translation}</p> : null}
-      {entry.excerpt ? <p style={{ margin: '0.45rem 0 0' }}>{entry.excerpt}</p> : null}
-      {entry.notes?.map((note) => (
-        <details key={`${note.title}-${note.detail}`} style={{ marginTop: '0.4rem' }}>
-          <summary className="small">{note.title}</summary>
-          <p className="small" style={{ margin: '0.35rem 0 0' }}>{note.detail}</p>
-        </details>
-      ))}
-    </>
+    <article className={`reader-column card ${traditionMeta[tradition].accentClass}`}>
+      <h2>{traditionMeta[tradition].label}</h2>
+      <div className="reader-controls">
+        <label>
+          Book
+          <select value={bookIdx} onChange={(e) => { setBookIdx(Number(e.target.value)); setChapterIdx(0); }}>
+            {books.map((book, idx) => <option value={idx} key={book.book}>{book.book}</option>)}
+          </select>
+        </label>
+        <label>
+          Chapter
+          <select value={chapterIdx} onChange={(e) => setChapterIdx(Number(e.target.value))}>
+            {selectedBook.chapters.map((chapter, idx) => (
+              <option value={idx} key={`${selectedBook.book}-${chapter.chapter}`}>{chapter.chapter}: {chapter.title}</option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <div>
+        <p className="small" style={{ marginBottom: 0 }}>Passage</p>
+        <h3>{selectedBook.book} {selectedChapter.chapter}</h3>
+        {selectedChapter.verses.map((verse) => (
+          <p key={verse}>{verse}</p>
+        ))}
+      </div>
+    </article>
   );
 }
 
-export function TriptychReader({ alignmentRows }: { alignmentRows: AlignmentRow[] }) {
+export function TriptychReader({ alignmentRows: _alignmentRows }: { alignmentRows?: AlignmentRow[] } = {}) {
+  const tabOrder = useMemo(() => (['bible', 'torah', 'quran'] as TraditionKey[]), []);
+  const [mobileTab, setMobileTab] = useState<TraditionKey>('bible');
+
   return (
-    <section className="card">
-      <h2 style={{ marginTop: 0 }}>Aligned Comparison</h2>
-      <p className="small" style={{ marginTop: '-0.3rem' }}>
-        Comparative reading matrix with expandable rows and source-preserving references.
-      </p>
-
-      <nav className="reader-sticky-nav" aria-label="Comparison sections">
-        <a href="#torah-column">Torah / Tanakh</a>
-        <a href="#bible-column">Christian Bible</a>
-        <a href="#quran-column">Qur’an</a>
-      </nav>
-
-      <div className="alignment-list" role="list">
-        {alignmentRows.map((row, idx) => (
-          <details className="alignment-row" key={`${row.beat}-${idx}`} open={idx === 0}>
-            <summary>
-              <span>
-                <strong>{row.beat}</strong>
-                {row.summary ? <span className="small row-summary"> — {row.summary}</span> : null}
-              </span>
-              <span className="small">Expand</span>
-            </summary>
-            {row.difference_tags?.length ? (
-              <div style={{ marginTop: '0.45rem' }}>
-                {row.difference_tags.map((tag) => {
-                  const label = typeof tag === 'string' ? tag : tag.lens;
-                  return <span className="tag" key={`${row.beat}-${label}`}>{label}</span>;
-                })}
-              </div>
-            ) : null}
-            <div className="triptych-column-grid" style={{ marginTop: '0.8rem' }}>
-              <article id="torah-column" className="card column-panel">
-                <h3>Torah / Tanakh</h3>
-                <EntryCell entry={row.torah} />
-              </article>
-              <article id="bible-column" className="card column-panel">
-                <h3>Christian Bible</h3>
-                <EntryCell entry={row.christian_bible} />
-              </article>
-              <article id="quran-column" className="card column-panel">
-                <h3>Qur’an</h3>
-                <EntryCell entry={row.quran} />
-              </article>
-            </div>
-          </details>
+    <section>
+      <div className="triptych-mobile-tabs" role="tablist" aria-label="Triptych traditions">
+        {tabOrder.map((tradition) => (
+          <button
+            key={tradition}
+            role="tab"
+            aria-selected={mobileTab === tradition}
+            className={mobileTab === tradition ? `active ${traditionMeta[tradition].accentClass}` : ''}
+            onClick={() => setMobileTab(tradition)}
+          >
+            {traditionMeta[tradition].label}
+          </button>
         ))}
+      </div>
+
+      <div className="triptych-desktop" aria-label="Triptych reader desktop layout">
+        <PassageColumn tradition="bible" />
+        <PassageColumn tradition="torah" />
+        <PassageColumn tradition="quran" />
+      </div>
+
+      <div className="triptych-mobile" aria-label="Triptych reader mobile layout">
+        <PassageColumn tradition={mobileTab} />
       </div>
     </section>
   );
